@@ -8,13 +8,13 @@
 <body>
 <header class="main-header">
     <div class = Logo>
-
+        <img src="../Img/Logo.png" alt="Logo"/>
     </div>
     <nav class="main-nav">
         <ul>
             <li>
-                <input type="text" id="search" placeholder="Search..">
-                <button onclick="search()">Search</button>
+                <label for="search"></label><input type="text" id="search" placeholder="Search..">
+                <button onclick="search()"><img src="../Img/lente.png" alt="Cerca"/></button>
             </li>
             <li><a href="#">Home</a></li>
             <li><a href="#">News</a></li>
@@ -23,7 +23,13 @@
         </ul>
     </nav>
    </header>
-            <li class="dropdown">
+<nav class="category-bar">
+    <ul>
+        <li><a href="#">Prima pagina</a></li>
+        <li><a href="#">Cronaca</a></li>
+        <li><a href="#">Dal Mondo</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li class="dropdown">
                 <a href="#" id="toggleMenu"> di più-</a>
                 <ul class = 'dropdown-menu'id="menuTendina">
                     <li><a href="#">Contatti</a></li>
@@ -31,42 +37,48 @@
                     <li><a href="#">Redazione</a></li>
                 </ul>
             </li>
+    </ul>
     </nav>
 
     <main class="content">
         <section class="grid">
             <article class="Hero">
-
+                <img src="../Img/Broadway.png" alt="Broadway">
+                <h2>Broadway Rinasce: Luci, Sogni e Applausi Ritrovati</h2>
+                <p>Dopo anni di incertezze, Broadway torna a brillare...</p>
             </article>
 
             <!-- Articoli -->
             <article class = "card">
-
+                <img src="/Img/WarZone.png" alt="Guerra" />
+                <h2>Fiamme nel Silenzio</h2>
+                <p>Nuovi attacchi scuotono la capitale durante la notte...</p>
             </article>
 
             <article class = "card">
-
+                <img src="/Img/Paesaggio.png" alt="Lago" />
+                <h2>Il Miracolo del Lago Invisibile</h2>
+                <p>Un villaggio alpino diventa virale sui social...</p>
             </article>
 
             <article class = "card">
-
+                <img src="/Img/Pace.png" alt="Pace" />
+                <h2>Prime Luci di Pace</h2>
+                <p>Cessate il fuoco tra Ucraina e Russia annunciato oggi...</p>
             </article>
 
             <article class = "card">
-
+                <img src="/Img/Politica.png" alt="Politica" />
+                <h2>Elezioni Anticipate</h2>
+                <p>Il governo annuncia elezioni anticipate per maggio...</p>
             </article>
 
             <article class = "card">
-
+                <img src="/Img/Robotica.png" alt="Tech" />
+                <h2>Robotica in Italia</h2>
+                <p>Il futuro è adesso: innovazione e IA in crescita...</p>
             </article>
 
-            <article class = "card">
-
-            </article>
-
-            <article class = "card">
-
-            </article>
         </section>
 
         <aside class="sidebar">
@@ -77,6 +89,11 @@
                 <li><a href="#">Bonus Giovani 2025: come richiederlo</a></li>
                 <li><a href="#">Calcio: Derby della Capitale</a></li>
             </ul>
+            <h3>Video del Giorno</h3>
+            <video controls width="100%">
+                <source src="/Video/video.mp4" type="video/mp4" />
+                Il tuo browser non supporta il video.
+            </video>
         </aside>
     </main>
 <footer >
